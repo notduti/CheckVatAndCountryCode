@@ -19,7 +19,7 @@ namespace APILibDutto5AOttobre23
 
             try
             {
-                HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/IT/vat/03078670043");
+                HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, uri);
 
                 var response = await client.SendAsync(request);
                 response.EnsureSuccessStatusCode();
